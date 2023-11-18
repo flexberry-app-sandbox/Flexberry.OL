@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПутевойЛист",
+      "projection": "ПутевойЛистL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Трансп ср",
+  "name": "IISOLТранспСрE",
+  "className": "ТранспСрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-o-l-трансп-ср",
+      "modelProjection": "ТранспСрE"
+    }
+  ]
+}

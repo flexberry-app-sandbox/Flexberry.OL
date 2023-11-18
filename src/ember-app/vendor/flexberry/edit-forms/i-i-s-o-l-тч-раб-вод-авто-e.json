@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Тч раб вод авто",
+  "name": "IISOLТчРабВодАвтоE",
+  "className": "ТчРабВодАвтоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-o-l-тч-раб-вод-авто",
+      "modelProjection": "ТчРабВодАвтоE"
+    }
+  ]
+}

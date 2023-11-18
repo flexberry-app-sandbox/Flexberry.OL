@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТранспСр",
+      "projection": "ТранспСрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Журнал учета",
+  "name": "IISOLЖурналУчетаE",
+  "className": "ЖурналУчетаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-o-l-журнал-учета",
+      "modelProjection": "ЖурналУчетаE"
+    }
+  ]
+}

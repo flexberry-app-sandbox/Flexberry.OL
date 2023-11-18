@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-o-l-трансп-ср-e",
+  "editForm": "i-i-s-o-l-трансп-ср-e",
+  "external": false,
+  "caption": "Трансп ср",
+  "name": "IISOLТранспСрL",
+  "className": "ТранспСрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-o-l-трансп-ср",
+      "modelProjection": "ТранспСрL"
+    }
+  ]
+}

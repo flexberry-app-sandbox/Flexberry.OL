@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-o-l-тч-раб-вод-авто-e",
+  "editForm": "i-i-s-o-l-тч-раб-вод-авто-e",
+  "external": false,
+  "caption": "Тч раб вод авто",
+  "name": "IISOLТчРабВодАвтоL",
+  "className": "ТчРабВодАвтоL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-o-l-тч-раб-вод-авто",
+      "modelProjection": "ТчРабВодАвтоL"
+    }
+  ]
+}

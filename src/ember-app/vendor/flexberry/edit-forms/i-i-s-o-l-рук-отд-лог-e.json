@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Рук отд лог",
+  "name": "IISOLРукОтдЛогE",
+  "className": "РукОтдЛогE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-o-l-рук-отд-лог",
+      "modelProjection": "РукОтдЛогE"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISOLТЧВодитель",
+  "modelName": "i-i-s-o-l-т-ч-водитель",
+  "className": "ТЧВодитель",
+  "nameSpace": "IIS.OL",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "допущен",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "табелНомер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-o-l-персонал",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧВодительE",
+      "modelName": "i-i-s-o-l-т-ч-водитель",
+      "attrs": [
+        {
+          "name": "табелНомер",
+          "caption": "Табел номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "допущен",
+          "caption": "Допущен",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Контакты",
+          "lookupValueField": "контакты",
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контакты",
+              "caption": "Контакты",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-o-l-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧВодительL",
+      "modelName": "i-i-s-o-l-т-ч-водитель",
+      "attrs": [
+        {
+          "name": "табелНомер",
+          "caption": "Табел номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "допущен",
+          "caption": "Допущен",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контакты",
+              "caption": "Контакты",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Контакты",
+          "name": "персонал",
+          "relatedTo": "i-i-s-o-l-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISOLТранспСр",
+  "modelName": "i-i-s-o-l-трансп-ср",
+  "className": "ТранспСр",
+  "nameSpace": "IIS.OL",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "госЗнак",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "марка",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "модель",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-o-l-персонал",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "путевойЛист",
+      "relatedTo": "i-i-s-o-l-путевой-лист",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТранспСрE",
+      "modelName": "i-i-s-o-l-трансп-ср",
+      "attrs": [
+        {
+          "name": "марка",
+          "caption": "Марка",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "госЗнак",
+          "caption": "Гос знак",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "модель",
+          "caption": "Модель",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Контакты",
+          "lookupValueField": "контакты",
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контакты",
+              "caption": "Контакты",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-o-l-персонал",
+          "inverse": null
+        },
+        {
+          "lookupValue": "СопровожЛица",
+          "lookupValueField": "сопровожЛица",
+          "relationName": "ПутевойЛист",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "сопровожЛица",
+              "caption": "Сопровож лица",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Путевой лист",
+          "name": "путевойЛист",
+          "relatedTo": "i-i-s-o-l-путевой-лист",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТранспСрL",
+      "modelName": "i-i-s-o-l-трансп-ср",
+      "attrs": [
+        {
+          "name": "марка",
+          "caption": "Марка",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "госЗнак",
+          "caption": "Гос знак",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "модель",
+          "caption": "Модель",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контакты",
+              "caption": "Контакты",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Контакты",
+          "name": "персонал",
+          "relatedTo": "i-i-s-o-l-персонал",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПутевойЛист",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "сопровожЛица",
+              "caption": "Сопровож лица",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Сопровож лица",
+          "name": "путевойЛист",
+          "relatedTo": "i-i-s-o-l-путевой-лист",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
